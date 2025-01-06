@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>스케줄퍼즐</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style1.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+
+	<link rel='icon' href='images/puzzle_logo.png'>
+	</head>
+	<body>
+	<div id="fh5co-page">
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+
+			<h1 id="fh5co-logo"><a href="index.html"><img src="images/puzzle_logo.png" alt="Free HTML5 Bootstrap Website Template" style='height: 150px;'></a></h1>
+			<nav id="fh5co-main-menu" role="navigation">
+				<ul>
+					<li class="fh5co-active"><a href="index.html">Home</a></li>
+					<li><a href="start.html">시작하기</a></li>
+                    <li><a href="tuto.html">튜토리얼</a></li>
+                    <li><a href="about.html">어플설명</a></li>
+                    
+				</ul>
+			</nav>
+		</aside>
+
+		<div id="fh5co-main">
+			<div class="fh5co-narrow-content">
+				<h2 class="fh5co-heading animate-box big_title" data-animate-effect="fadeInLeft">튜토리얼</h2>
+				<div style='text-align: center;'>
+					<div class='animate-box'>
+						<div id='tu_div'>
+							<button style='float: left; margin-top: 95%; width: 15%;' onclick='pre_image();'>Prev</button>
+							<img id='img_tag' src="images/0.png">
+							<button style='float: right; margin-top: 95%; width: 15%;' onclick='next_image();'>Next</button>
+						
+						</div>
+					</div>
+					<p class='animate-box' id='expl' style='margin-left: 30px; margin-right: 30px;'>
+						'가나다라'""
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		/* @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css); */
+		@font-face{
+			font-family: 'nanum';
+			font-weight: normal;
+			font-style: normal;
+			src:url('fonts/nanum/nanumpen.ttf');
+		}
+
+		.big_title{
+			/* font-family: 'Nanum Pen Script', cursive; */
+			font-family: 'nanum';
+			font-size: 70px;
+			margin-bottom: 10px;
+		}
+	</style>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	<script>
+		exps = [
+			'(1/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">안녕하세요! 튜토리얼이에요.<br>바로설명 드리자면 처음 "시작하기"를 들어가면 그림과 같이 떠요.</p>',
+			'(2/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">저 빨간 동글이 부분을 터치하면<br>그림처럼 네모난것이 생겨요.</p>',
+			'(3/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">강의이름과 무슨요일, 몇교시인지 입력해보았어요.<br>전 필수로 들을 강의를 3개로 잡았어요.</p>',
+			'(4/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">그 다음에 저 빨간 동글이 부분을 터치하면<br>위에서 했던거와 같이 네모난것이 생겨요.</p>',
+			'(5/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">위에 있던 3개의 강의는 이름 또는 시간이 겹치면 안되지만,<br>여기서는 이름이 겹치든 시간이 겹치든 상관이 없어요.</p>',
+			'(6/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">보통 7과목 듣지요?<br>빨간 동글이 터치해서 7까지 올리면 됩니다.</p>',
+			'(7/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">짠!</p>',
+			'(8/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">공강할 요일을 선택했어요.<br>전 금요일을 공강으로 잡았어요.<br>공강 여러개 잡을 수 있지만 욕심가득한 시간표는 나오지않아요~</p>',
+			'(9/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">자 이제 "가능한 시간표들 보기" 버튼을 터치하면 말그대로 가능한 시간표들이 나와요<br>저는 운이 나빠 시간표 하나만 나왔지만<br>여러분은 플랜B 시간표들을 많이 볼 수 있을 거에요.</p>',
+			'(10/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">안녕하세요! 주의사항이에요.<br>이름칸에 공백으로 남겨두면 안돼요~</p>',
+			'(11/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">저건 불가능한 거에요~</p>',
+			'(12/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">"필수"인 강의들은 시간이 겹치면 안돼요~<br>반면에, "선택"인 강의들은 시간이 겹쳐도 돼요~</p>',
+			'(13/13)<br><p style="text-align: left; margin-top: 15px; font-size: 13px; font-weight:bold;">"필수"인 강의들은 이름이 겹치면 안돼요~<br>반면에, "선택"인 강의들은 이름이 겹쳐도 돼요~<br>Q: 전필인데 이름이 같은 강의가 두개에요!<br>A: ...미안해요.</p>'];
+
+
+		images = [];
+		images.push('images/0.png');
+		images.push('images/1.png');
+		images.push('images/2.png');
+		images.push('images/3.png');
+		images.push('images/4.png');
+		images.push('images/5.png');
+		images.push('images/6.png');
+		images.push('images/7.png');
+		images.push('images/8.png');
+		images.push('images/9.png');
+		images.push('images/10.png');
+		images.push('images/11.png');
+		images.push('images/12.png');
+
+		let cur = 0;
+		img = document.querySelector('#img_tag');
+		img.setAttribute('style', 'width: 65%;');
+		p = document.querySelector('#expl');
+
+		window.onload = init;
+		function init(){
+			img.src = images[cur];
+			p.innerHTML = exps[cur];
+		}
+
+		function pre_image(){
+			cur = cur + images.length - 1; 
+			cur %= images.length;
+			img.src = images[cur];
+			p.innerHTML = exps[cur];
+		}
+
+		function next_image(){
+			cur = cur + images.length + 1; 
+			cur %= images.length;
+			img.src = images[cur];
+			p.innerHTML = exps[cur];
+		}
+	</script>
+
+
+
+
+
+	</body>
+</html>
+

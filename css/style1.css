@@ -1,0 +1,84 @@
+.batch_table{
+	display: inline-block;
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 2px;
+	width: 18%;
+	width: 150px;
+}
+
+table, td{
+	border: 1px solid #bcbcbc;
+}
+
+.batch_table button {
+	font-size: 10px;
+	height: 38px;
+	margin: 0px;
+	width: 100%;
+}
+/* 
+.batch_table tr:nth-child(2) td:nth-child(1) button{
+	width: 82px;
+} */
+
+.batch_table input {
+	border-radius: 0px;
+	height: 38px;
+	width: 100%;
+}
+
+.batch_table select {
+	height: 38px;
+	width: 100%;
+}
+
+.batch_sche{
+	margin: 10px;
+	width: 95%;
+	height: 450px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.batch_sche td{
+	width: 5px;
+	background-color: rgb(250,250,250);
+	border: 1px solid black;
+}
+
+.batch_sche p{
+	height: 0px;
+}
+
+button, select{
+	background-color: white;
+    color: black;
+}
+
+
+.big_title{
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-right:0px;
+}
+
+
+
+
+.ind_title{
+	width: 500px;
+}
+
+.ind_div{
+	width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+	.ind_title{
+		width: 100%;
+	}
+	.ind_div{
+		width: 100%;
+	}
+}
